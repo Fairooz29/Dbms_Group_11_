@@ -84,13 +84,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 function getRedirectUrl($designation) {
     switch ($designation) {
         case 'admin':
-            return 'admin_panel.php';
+            return 'admin.php';
         case 'crop_researcher':
-            return 'researcher_dashboard.php';
+            return 'researcher.php';
         case 'farmer':
-            return 'farmer_dashboard.php';
+            return 'farmer.php';
         case 'customer':
-            return 'customer_dashboard.php';
+            return 'customer.php';
         default:
             return 'dashboard.php';
     }
