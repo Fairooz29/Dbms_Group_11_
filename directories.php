@@ -12,7 +12,7 @@ if (isset($_GET['entity'])) {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "directories";
+    $dbname = "agritruck";
 
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -128,8 +128,8 @@ if (isset($_GET['entity'])) {
       <li><a href="consumer.html">Consumer</a></li>
       <li><a href="warehouse.html">Real Time Supply</a></li>
       <li><a href="trends.html">Trends</a></li>
-      <li><a href="#">Analytics</a></li>
-      <li><a href="#">Recommendations</a></li>
+      <li><a href="analytical.html">Analytics</a></li>
+      <li><a href="recommendation.html">Recommendations</a></li>
       <li><a href="directories.html">Directory</a></li>
     </ul>
   </div>
